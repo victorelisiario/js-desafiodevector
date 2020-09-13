@@ -31,13 +31,13 @@
         border-radius: 3px;
     }
 
-    .operador{
-        background-color: blue;
+    #operador{
+        background-color: #6060FF;
         margin: 0 10px 0;
         padding: 10px 20px;
     }
 
-    .valores {
+    #valor01, #valor02 {
         background-color: #477D46;
         padding: 10px;
     }
@@ -63,13 +63,13 @@
 
     }
 
-    .tentar, .desistir {
+    #tentar, .desistir {
         padding: 10px;
         width: 30%;
         margin: 0 10px;
     }
 
-    .tentar {
+    #tentar {
         background-color: #00FF00;
     }
 
@@ -86,13 +86,4 @@
         margin: 20px;
     } */
 
-    footer {
-        
-        position:absolute;
-        bottom:0;
-        width:100%;
-        
-    }
 }
-
-
