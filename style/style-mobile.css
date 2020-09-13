@@ -63,7 +63,7 @@
 
     }
 
-    #tentar, .desistir {
+    #tentar, #desistir {
         padding: 10px;
         width: 30%;
         margin: 0 10px;
@@ -73,8 +73,12 @@
         background-color: #00FF00;
     }
 
-    .desistir {
+    #desistir {
         background-color: red;
+    }
+
+    .venceu {
+        background-color: #00FF00;
     }
 
     /* .teclado-umtres button, .teclado-quatroseis button, 
