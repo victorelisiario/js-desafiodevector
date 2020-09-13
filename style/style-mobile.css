@@ -1,87 +1,90 @@
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 480px) {
     body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #FFD6AF;
-        display: inline;
-
+        
     }
 
     img {
         padding: 0 0 10px 0;
         margin-top: 15px ;
         width: 50%;
+        
     }
 
-    p {
-    font-size: 50px;
+    .pergunta {
+        font-size: 20px;
     }
 
     .dados {
 
-        margin: 50px 0 50px 0;
+        margin: 10px 0 10px 0;
         display: block;
         text-align: center;
         
     }
 
     .dados p {
-        display: inline;
-        font-size: 100px;
-        margin: 0 20px;
+        display: inline-block;
+        font-size: 45px;
+        border-radius: 3px;
     }
 
-    .operador {
+    .operador{
         background-color: blue;
-        padding: 15px 45px 15px;
+        margin: 0 10px 0;
+        padding: 10px 20px;
     }
 
     .valores {
         background-color: #477D46;
-        padding: 15px;
+        padding: 10px;
     }
 
     input {
-        padding: 15px 20px;
-        font-size: 100px;
+        padding: 10px 0;
+        font-size: 45px;
         text-align: center;
         border-radius: 5px;
-        width: 50%;
-        margin-bottom: 25px;
+        width: 60%;
+        margin-bottom: 10px;
+
+        box-sizing: border-box;
+        border: .5px solid #000000;
+        border-radius: 3px;
     }
 
     .tentardesistir button {
-        display: inline;
-        font-size: 45px;
-        margin: 0px 20px 35px;
+        
+
+        display: inline-block;
+        font-size: 20px;
+
     }
 
     .tentar, .desistir {
+        padding: 10px;
         width: 30%;
-        padding: 15px;
+        margin: 0 10px;
     }
 
     .tentar {
         background-color: #00FF00;
-
     }
 
     .desistir {
         background-color: red;
-    
     }
 
-    /* 
-
-    .teclado-umtres button, .teclado-quatroseis button, 
+    /* .teclado-umtres button, .teclado-quatroseis button, 
     .teclado-setenove button, .teclado-zero  button {
         background-color: white;
         padding: 25px 55px 25px;
         font-size: 70px;
         font-weight: bold;
         margin: 20px;
-    } 
-
+    } */
 
     footer {
         
@@ -90,8 +93,6 @@
         width:100%;
         
     }
-
-    */
-
-
 }
+
+

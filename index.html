@@ -6,57 +6,66 @@
     <head>
         <meta charset="UTF-8">
         <title>Desafio de Vector</title>
+        <meta name="viewport" content="width=device-width"> 
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style-mobile.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         
         <header>
-            <img src="imagens/desafiosdevector.png">
+            <img src="imagens/desafiosdevector.png" alt="Desafios de Vector">
         </header>
 
         <main>
-            <p class="pergunta">Consegue acertar o resultado?</p>
-                
-            <div class="dados">
-                <p class="valores">542</p>
-                <p class="operador">+</p>
-                <p class="valores">234</p>
+            <div class="direito">
+                <p class="pergunta">Consegue acertar o resultado?</p>
+                    
+                <div class="dados">
+                    <p class="valores">542</p>
+                    <p class="operador">+</p>
+                    <p class="valores">234</p>
+                </div>
+    
+                <input type="number" required placeholder = "???">
+    
+                <div class="tentardesistir">
+                    <button class="tentar">TENTAR</button>
+                    <button class="desistir">DESISTIR</button>
+                </div>
             </div>
-
-            <input>
-
-            <div class="tentardesistir">
-                <button class="tentar">TENTAR</button>
-                <button class="desistir">DESISTIR</button>
-            </div>
+            <!--
             
-            <div class="teclado">
-                <div class="teclado-umtres">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+            <div class="esquerdo">
+                <div class="teclado">
+                    <div class="teclado-umtres">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="teclado-quatroseis">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div class="teclado-setenove">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                    <div class="teclado-zero">
+                        <button>0</button>
+                    </div>                
                 </div>
-                <div class="teclado-quatroseis">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                </div>
-                <div class="teclado-setenove">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                </div>
-                <div class="teclado-zero">
-                    <button>0</button>
-                </div>                
-            </div>
+            </div> 
+                
+            -->   
         </main>
 
         <footer>
-            <img src="imagens/logo.png">
+            <img src="imagens/logo.png" alt="Logo do Jogo">
         </footer>
         <script src="script.js"></script>
     </body>
