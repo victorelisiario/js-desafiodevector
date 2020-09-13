@@ -1,5 +1,5 @@
 @media screen and (min-width: 481px) {
-    body {
+    #body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #FFD6AF;
@@ -33,7 +33,7 @@
 
     #operador {
         background-color: #6060FF;
-        padding: 15px 45px 15px;
+        padding: 10px 45px;
     }
 
     #valor01, #valor02 {
@@ -70,11 +70,7 @@
         background-color: red;
     
     }
-
-    .venceu {
-        background-color: #00FF00;
-    }
-
+    
     /* 
 
     .teclado-umtres button, .teclado-quatroseis button, 

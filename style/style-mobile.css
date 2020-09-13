@@ -1,5 +1,5 @@
 @media screen and (max-width: 480px) {
-    body {
+    #body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #FFD6AF;
@@ -76,11 +76,7 @@
     #desistir {
         background-color: red;
     }
-
-    .venceu {
-        background-color: #00FF00;
-    }
-
+    
     /* .teclado-umtres button, .teclado-quatroseis button, 
     .teclado-setenove button, .teclado-zero  button {
         background-color: white;

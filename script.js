@@ -2,6 +2,7 @@ let numero01;
 let numero02;
 let operador;
 let resultado;
+let pontuacao = 0;
 var palpitefoco = document.querySelector("#input");
 
 
@@ -86,41 +87,39 @@ function sorteiaNumeros () {
     console.log("----");
 }
 
-function verificacao () {
+function backgroundVerde() {
+    document.getElementById("body").style.backgroundColor = "#00FF00";
+}
 
+function backgroundNormal() {
+    document.getElementById("body").style.backgroundColor = "#FFD6AF";
+}
+
+function verificacao () {
     var palpite = document.getElementById('input').value;
     
-    console.log(palpite);
-    console.log(resultado);
-
     if (resultado == palpite) {
-        console.log("ACERTOU");       
-        
+        pontuacao += 1;
+        console.log(pontuacao);
+ 
+        backgroundVerde();
+        setTimeout(backgroundNormal, 400);
+
+        sorteiaNumeros();
+        palpite = document.getElementById('input').value = "";
+        palpitefoco.focus();
     } else {
-        console.log("ERROU");
+       console.log("ERROU");
+        
     }
-
-    
-    sorteiaNumeros();
-    palpite = document.getElementById('input').value = "";
-    palpitefoco.focus();
-
-
-
 }
 
 function desistencia () {
-    sorteiaNumeros ();
+    console.log("desistiu")
+  //  window.location.href = "telafinal.html"
 }
+
+
 
 sorteiaNumeros();
 palpitefoco.focus();
-
-
-
-// palpite.focus();
-//sorteiaNumeros()
-var botaoTentar = document.querySelector("button#tentar");
-botaoTentar.onclick = verificacao;
-//var botaoAtualizar = document.querySelector("button#atualizar");
-//botaoAtualizar.onclick = resortear;

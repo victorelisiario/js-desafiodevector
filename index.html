@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="body">
         
         <header>
             <img src="imagens/desafiosdevector.png" alt="Desafios de Vector">
@@ -32,10 +32,11 @@
                 <input id="input" type="number" placeholder="???">
     
                 <div class="tentardesistir">
-                    <button id="tentar"">TENTAR</button>
-                    <button id="desistir" onclick="desistencia ()">DESISTIR</button>
+                    <button id="tentar" alt="Botão Tentar" onclick="verificacao()">TENTAR</button>
+                    <button id="desistir" alt="Botão Desistir" onclick="desistencia()">DESISTIR</button>
                 </div>
             </div>
+
             <!--
             
             <div class="esquerdo">
@@ -65,7 +66,7 @@
         </main>
 
         <footer>
-            <img src="imagens/logo.png" alt="Logo do Jogo">
+           <!-- <img src="imagens/logo.png" alt="Logo do Jogo"> -->
         </footer>
         <script src="script.js"></script>
     </body>
