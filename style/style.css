@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #FFD6AF;
+    display: inline;
+
+}
+
+img {
+    padding: 0 0 10px 0;
+    margin-top: 15px ;
+    width: 50%;
+}
+
+p {
+   font-size: 50px;
+}
+
+.dados {
+
+    margin: 50px 0 50px 0;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.dados p {
+    display: inline;
+    font-size: 100px;
+    margin: 0 20px;
+}
+
+.operador {
+    background-color: blue;
+    padding: 15px 45px 15px;
+}
+
+.valores {
+    background-color: #477D46;
+    padding: 15px;
+}
+
+input {
+    padding: 15px 20px;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.tentardesistir button {
+    display: inline;
+    font-size: 50px;
+    margin: 0px 20px 35px;
+}
+
+.tentar, .desistir {
+    padding: 20px;
+}
+
+.tentar {
+    background-color: #00FF00;
+    width: 30%;
+}
+
+.desistir {
+    background-color: red;
+    width: 30%;
+}
+
+.teclado-umtres button, .teclado-quatroseis button, 
+.teclado-setenove button, .teclado-zero  button {
+    background-color: white;
+    padding: 25px 55px 25px;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+}
+
