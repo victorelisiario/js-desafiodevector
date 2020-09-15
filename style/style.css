@@ -1,5 +1,5 @@
 @media screen and (min-width: 481px) {
-    #body {
+    body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #FFD6AF;
@@ -31,17 +31,17 @@
         margin: 0 20px;
     }
 
-    #operador {
+    .operador {
         background-color: #6060FF;
         padding: 10px 45px;
     }
 
-    #valor01, #valor02 {
+    .valores {
         background-color: #477D46;
         padding: 10px;
     }
 
-    input {
+    .input {
         padding: 15px 20px;
         font-size: 100px;
         text-align: center;
@@ -54,19 +54,20 @@
         display: inline;
         font-size: 45px;
         margin: 0px 20px 35px;
+
     }
 
-    #tentar, #desistir {
+    button {
         width: 30%;
         padding: 15px;
     }
 
-    #tentar {
+    .button-tentar {
         background-color: #00FF00;
 
     }
 
-    #desistir {
+    .button-desistir {
         background-color: red;
     
     }

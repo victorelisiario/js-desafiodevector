@@ -3,7 +3,7 @@ let numero02;
 let operador;
 let resultado;
 let pontuacao = 0;
-var palpitefoco = document.querySelector("#input");
+var palpitefoco = document.querySelector("[data-input]");
 
 
 function sorteiaNumerosSomaSubtracao () {
@@ -21,16 +21,16 @@ function sorteiaNumerosDivisao () {
     numeroProvavel02 = Math.round(Math.random() * 10);
 }
 
-function sorteiaNumeros () {
+function mostraNumeros () {
     operador = Math.floor(Math.random() * 4);
 
     if (operador == 0) {
         sorteiaNumerosSomaSubtracao ();
         numero01 = numeroProvavel01;
         numero02 = numeroProvavel02;
-        document.getElementById('operador').innerHTML = "+";
-        document.getElementById('valor01').innerHTML = numero01;
-        document.getElementById('valor02').innerHTML = numero02;
+        document.querySelector('[data-operador]').innerHTML = "+";
+        document.querySelector('[data-valor01]').innerHTML = numero01;
+        document.querySelector('[data-valor02]').innerHTML = numero02;
         resultado = (numero01 + numero02);
     
     
@@ -43,19 +43,19 @@ function sorteiaNumeros () {
             numero01 = numeroProvavel02;
             numero02 = numeroProvavel01;
         }
-        document.getElementById('operador').innerHTML = "+";
-        document.getElementById('valor01').innerHTML = numero01;
-        document.getElementById('valor02').innerHTML = numero02;
-        resultado = (numero01 + numero02);
+        document.querySelector('[data-operador]').innerHTML = "-";
+        document.querySelector('[data-valor01]').innerHTML = numero01;
+        document.querySelector('[data-valor02]').innerHTML = numero02;
+        resultado = (numero01 - numero02);
     
     
     } else if (operador == 2) {
         sorteiaNumerosMultiplicacao();
         numero01 = numeroProvavel01;
         numero02 = numeroProvavel02;
-        document.getElementById('operador').innerHTML = "X";
-        document.getElementById('valor01').innerHTML = numero01;
-        document.getElementById('valor02').innerHTML = numero02;
+        document.querySelector('[data-operador]').innerHTML = "X";
+        document.querySelector('[data-valor01]').innerHTML = numero01;
+        document.querySelector('[data-valor02]').innerHTML = numero02;
         resultado = (numero01 * numero02);
     
     
@@ -71,16 +71,17 @@ function sorteiaNumeros () {
         }
     
         const numerador = (numeroProvavel01 * numeroProvavel02);
-            numero02 = (numerador / numeroProvavel01);
-        
-            numero01 = numerador;
-            numero02 = numeroProvavel02
-        
-            document.getElementById('operador').innerHTML = "÷";
-            document.getElementById('valor01').innerHTML = numero01;
-            document.getElementById('valor02').innerHTML = numero02;
-            resultado = (numeroProvavel01);   
+        numero02 = (numerador / numeroProvavel01);
+    
+        numero01 = numerador;
+        numero02 = numeroProvavel02
+    
+        document.querySelector('[data-operador]').innerHTML = "÷";
+        document.querySelector('[data-valor01]').innerHTML = numero01;
+        document.querySelector('[data-valor02]').innerHTML = numero02;
+        resultado = (numeroProvavel01);   
     }
+
     console.log(numero01);
     console.log(numero02);
     console.log(resultado);
@@ -88,15 +89,15 @@ function sorteiaNumeros () {
 }
 
 function backgroundVerde() {
-    document.getElementById("body").style.backgroundColor = "#00FF00";
+    document.querySelector("[data-body]").style.backgroundColor = "#00FF00";
 }
 
 function backgroundNormal() {
-    document.getElementById("body").style.backgroundColor = "#FFD6AF";
+    document.querySelector("[data-body]").style.backgroundColor = "#FFD6AF";
 }
 
 function verificacao () {
-    var palpite = document.getElementById('input').value;
+    var palpite = document.querySelector('[data-input]').value;
     
     if (resultado == palpite) {
         pontuacao += 1;
@@ -105,21 +106,28 @@ function verificacao () {
         backgroundVerde();
         setTimeout(backgroundNormal, 400);
 
-        sorteiaNumeros();
-        palpite = document.getElementById('input').value = "";
+        mostraNumeros();
+        palpite = document.querySelector('[data-input]').value = "";
         palpitefoco.focus();
     } else {
-       console.log("ERROU");
-        
+        console.log("ERROU");
+        window.location.href = "telafinal.html"
+
     }
 }
 
 function desistencia () {
     console.log("desistiu")
-  //  window.location.href = "telafinal.html"
+    window.location.href = "telafinal.html"
+
+    return
 }
 
-
-
-sorteiaNumeros();
+mostraNumeros();
 palpitefoco.focus();
+
+
+const botaoTentar = document.querySelector('[data-botaoTentar]');
+botaoTentar.addEventListener('click', verificacao);
+const botaoDesistir = document.querySelector('[data-botaoDesistir]');
+botaoDesistir.addEventListener('click', desistencia);
