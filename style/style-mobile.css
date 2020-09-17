@@ -3,14 +3,12 @@
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #FFD6AF;
-        
     }
 
     img {
         padding: 0 0 10px 0;
         margin-top: 15px ;
         width: 50%;
-        
     }
 
     .pergunta {
@@ -18,11 +16,9 @@
     }
 
     .dados {
-
         margin: 10px 0 10px 0;
         display: block;
         text-align: center;
-        
     }
 
     .dados p {
@@ -30,19 +26,24 @@
         font-size: 45px;
         border-radius: 3px;
     }
-
+    
     .operador{
         background-color: #6060FF;
         margin: 0 10px 0;
-        padding: 10px 20px;
+        padding: 10px 10px;
+        width: 30px;
     }
-
+    
     .valores {
         background-color: #477D46;
         padding: 10px;
+        width:95px;
     }
 
     .input {
+        border: 1px solid black;
+        border-radius: 5px;
+
         padding: 10px 0;
         font-size: 45px;
         text-align: center;
@@ -56,10 +57,14 @@
     }
 
     .tentardesistir button {
+        border: 0px;
+        border-radius: 2px;
+
         display: inline-block;
+        min-width: 110px;
+        margin: 0 5px ;
         font-size: 20px;
         padding: 10px;
-        
     }
 
     button {
@@ -68,20 +73,21 @@
     }
 
     .button-tentar {
-        background-color: #00FF00;
+        background-color: rgb(52, 238, 52);
     }
 
     .button-desistir {
-        background-color: red;
+        background-color: rgb(236, 46, 46);
     }
     
-    /* .teclado-umtres button, .teclado-quatroseis button, 
-    .teclado-setenove button, .teclado-zero  button {
-        background-color: white;
-        padding: 25px 55px 25px;
-        font-size: 70px;
-        font-weight: bold;
-        margin: 20px;
-    } */
+}
 
+@media screen and (max-width: 308px) {
+    .dados p, .tentardesistir button {
+        margin-bottom: 10px;
+    }
+
+    input {
+        min-width: 110px;
+    }
 }

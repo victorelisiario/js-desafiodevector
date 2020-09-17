@@ -5,5 +5,5 @@
 
 <p>Linguagens utilizadas: HTML, CSS e javascript. </p>
 
-<p>Ini­cio do desenvolvimento: 21.06.2020 </p>
 <br>Estilizacao: Victor Elisiario</p>
+<br>Logo: Natalia Goes</p>

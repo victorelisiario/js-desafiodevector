@@ -8,79 +8,66 @@
     }
 
     img {
-        padding: 0 0 10px 0;
-        margin-top: 15px ;
-        width: 50%;
+        margin-top: 5px ;
+        width: 250px;
     }
 
     p {
-    font-size: 50px;
+        font-size: 40px;
     }
 
     .dados {
-
-        margin: 50px 0 50px 0;
+        margin: 25px 0 25px 0;
         display: block;
         text-align: center;
-        
     }
 
     .dados p {
-        display: inline;
-        font-size: 100px;
-        margin: 0 20px;
+        display: inline-block;
+        font-size: 70px;
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 2px;
     }
 
     .operador {
         background-color: #6060FF;
-        padding: 10px 45px;
+        width: 50px;
     }
 
     .valores {
         background-color: #477D46;
-        padding: 10px;
+        width: 135px;
     }
 
     .input {
-        padding: 15px 20px;
-        font-size: 100px;
-        text-align: center;
+        border: 1px solid black;
         border-radius: 5px;
+
+        padding: 10px 20px;
+        font-size: 70px;
+        text-align: center;
         width: 50%;
+        max-width: 300px;
         margin-bottom: 25px;
     }
 
     .tentardesistir button {
-        display: inline;
-        font-size: 45px;
+        border: 0;
+        border-radius: 2px;
+
+        display: inline-block;
+        font-size: 25px;
+        width: 155px;
         margin: 0px 20px 35px;
-
-    }
-
-    button {
-        width: 30%;
         padding: 15px;
     }
 
     .button-tentar {
-        background-color: #00FF00;
-
+        background-color: rgb(52, 238, 52);
     }
 
     .button-desistir {
-        background-color: red;
-    
+        background-color: rgb(236, 46, 46);
     }
-    
-    /* 
-
-    .teclado-umtres button, .teclado-quatroseis button, 
-    .teclado-setenove button, .teclado-zero  button {
-        background-color: white;
-        padding: 25px 55px 25px;
-        font-size: 70px;
-        font-weight: bold;
-        margin: 20px;
-    } 
-    */
 }
