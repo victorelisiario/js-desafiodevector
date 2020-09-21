@@ -122,6 +122,7 @@ function verificacao () {
         pontuacoes.push(pontuacao);
         console.log(pontuacoes)
 
+        localStorage["pontuacoes"] = JSON.stringify(pontuacoes);
 
     } else {
         console.log("ERROU");
