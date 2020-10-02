@@ -21,7 +21,7 @@ function sorteiaNumerosSomaSubtracao () {
 
 function sorteiaNumerosMultiplicacao () {
     numeroProvavel01 = Math.round(Math.random() * 100);
-    numeroProvavel02 = Math.round(Math.random() * 100);
+    numeroProvavel02 = Math.round(Math.random() * 10);
 }
 
 function sorteiaNumerosDivisao () {
