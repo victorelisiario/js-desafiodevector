@@ -1,8 +1,6 @@
 export {mostraNumeros};
 export {verificacao};
 export {desistencia};
-export {pontuacoes};
-
 
 let numeroProvavel01;
 let numeroProvavel02;
@@ -11,8 +9,6 @@ let numero02;
 let resultado;
 var palpitefoco = document.querySelector("[data-input]");
 let pontuacao = 0;
-var pontuacoes = [];
-
 
 function sorteiaNumerosSomaSubtracao () {
     numeroProvavel01 = Math.round(Math.random() * 1000);
@@ -119,10 +115,10 @@ function verificacao () {
         palpitefoco.focus();
         pontuacao += 1;
 
-        pontuacoes.push(pontuacao);
-        console.log(pontuacoes)
+        // pontuacoes.push(pontuacao);
+        console.log(pontuacao)
 
-        localStorage["pontuacoes"] = JSON.stringify(pontuacoes);
+        localStorage["pontuacao"] = JSON.stringify(pontuacao);
 
     } else {
         console.log("ERROU");

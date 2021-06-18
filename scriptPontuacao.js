@@ -1,6 +1,6 @@
 
-var pontuacoes = JSON.parse(localStorage['pontuacoes']);
-var ultimaPontuacao = pontuacoes.slice(-1)[0]
+var pontuacao = JSON.parse(localStorage['pontuacao']);
+// var ultimaPontuacao = pontiacao.slice(-1)[0]
 
-document.querySelector('[data-pontuacao]').innerHTML = ultimaPontuacao + " ponto(s)";
-console.log(ultimaPontuacao)
+document.querySelector('[data-pontuacao]').innerHTML = pontuacao + " ponto(s)";
+console.log(pontuacao)
